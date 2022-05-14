@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta content="initial-scale=1" name="viewport" />
+    <title>Connexion</title>
+    <link type="text/css" rel="stylesheet" href="/auth/resources/w2vjf/login/TENUP/styles/mire-fft.css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/auth/resources/w2vjf/login/TENUP/styles/font.css">
+    <!-- tag commander -->
+    <script>
+        var my_tag_script = document.createElement('script');
+        if (window.location.hostname == "auth-dev.fft.fr")
+        {
+            my_tag_script.setAttribute('src', 'https://cdn.tagcommander.com/3288/uat/tc_FFT_38.js');
+        }
+        else {
+            my_tag_script.setAttribute('src', 'https://cdn.tagcommander.com/3288/tc_FFT_38.js');
+        }
+        document.head.appendChild(my_tag_script);
+    </script>
+</head>
+<body>
+    <div class="container-connexion">
+        <div class="form-connexion">
+            <div class="form-connexion-inner">
+                <div class="logo">
+                    <picture>
+                        <source srcset="/auth/resources/w2vjf/login/TENUP/img/logo.png, /auth/resources/w2vjf/login/TENUP/img/logo@2x.png 2x">
+                        <img src="/auth/resources/w2vjf/login/TENUP/img/logo.png" alt="">
+                    </picture>
+                </div>
+                <h1>Connexion</h1>
+                <p>Connectez-vous en utilisant les mêmes identifiants que sur les sites FFT : Ten’Up, Proshop FFT, la billetterie ou la boutique Roland-Garros</p>
+                <div class="form-connexion-elements">
+                    <!-- <form action="#" method="post" id=""> -->
+					<form id="kc-form" class="form-container" onsubmit="return true;" action="https://auth.fft.fr/auth/realms/master/login-actions/authenticate?session_code=YLZ9HtNbdTuUZnbyFbvygni8LJP924W1jWkjWcZtW60&amp;execution=ed0c10f7-09ad-4f60-b84c-42267412a435&amp;client_id=FED_MET&amp;tab_id=lb_N60JYaIU" method="post">
+					
+						<!-- Gestion des erreurs -->						
+                        
+						<div class="field-group">
+                            <label for="username" class="label-control">Identifiant</label>
+                            <input type="text" class="form-control" id="username" name="username" autocomplete="username">
+                        </div>
+                        <div class="field-group">
+                            <label for="password" class="control-label">Mot de passe</label>
+                            <div class="passwd-behaviour">
+                                <input type="password" id="password" class="form-control" name="password" autocomplete="current-password">
+                                <button id="btn-see-passwd" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.999" height="12.8" viewBox="0 0 15.999 12.8" title="Voir le mot de passe">
+                                        <g id="Combined_Shape" data-name="Combined Shape" style="isolation: isolate">
+                                            <path id="Combined_Shape-2" data-name="Combined Shape" d="M8,12.8a7.726,7.726,0,0,1-4.675-1.616A10.215,10.215,0,0,1,.088,6.85a1.2,1.2,0,0,1,0-.9A10.215,10.215,0,0,1,3.325,1.616,7.726,7.726,0,0,1,8,0a7.726,7.726,0,0,1,4.675,1.616A10.214,10.214,0,0,1,15.912,5.95a1.206,1.206,0,0,1,0,.9,10.214,10.214,0,0,1-3.237,4.334A7.726,7.726,0,0,1,8,12.8ZM8,1.48C5.257,1.48,2.759,3.365,1.48,6.4,2.759,9.434,5.257,11.319,8,11.319S13.24,9.434,14.52,6.4C13.241,3.366,10.742,1.48,8,1.48ZM8,9.317A2.917,2.917,0,1,1,10.867,6.4,2.9,2.9,0,0,1,8,9.317ZM8,4.964A1.437,1.437,0,1,0,9.412,6.4,1.426,1.426,0,0,0,8,4.964Z" transform="translate(0)" fill="#232346"/>
+                                        </g>
+                                    </svg>
+                                    <span class="line">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.655" height="13.756" viewBox="0 0 15.655 13.756">
+                                            <line id="Ligne_1" data-name="Ligne 1" y1="13" x2="15" transform="translate(0.327 0.378)" fill="none" stroke="#232346" stroke-width="1"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="additional-link"><a href="https://tenup.fft.fr/user/password">Mot de passe oublié ?</a></div>
+                        </div>
+                        <div class="actions">
+                            <button type="submit">CONNEXION</button>
+                        </div>
+                        <div class="no-account">
+                            <p>Pas encore de compte ? <br> <a href="https://tenup.fft.fr/user/register">Inscrivez-vous sur Ten’Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="visuel">
+        </div>
+    </div>
+    <script src="/auth/resources/w2vjf/login/TENUP/scripts/connexion.js"></script>
+</body>
+</html>

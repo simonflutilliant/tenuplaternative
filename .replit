@@ -1,2 +1,2 @@
-language = "nodejs"
-run = "npm install"
+language = 'nodejs';
+run = 'node index.js';
